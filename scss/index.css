@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #555555;
+  font-size: 62.5%;
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  color: #CDC9C3;
+}
+.nav{
+  background-color: #555555;
+  color: #CDC9C3;
+}
+
+.imagen-logo{
+  width: 15%;
+}  
+.texto-logo{
+    text-decoration: none;
+    list-style: none;
+    color: #555555;
+}
+
+
+.informacion {
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #989898;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (33. 3%)[3];
+      grid-template-columns: repeat(3, 33, 3%);
+  text-align: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  font-size: 175%;
+      grid-template-areas: "direccion horario telefono";
+  color: #555555;
+}
+
+.direccion {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: direccion;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.horario {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: horario;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.telefono {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: telefono;
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+
+
+.menu {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: menu;
+  width: 100%;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  justify-items: left;
+  padding: 3%;
+}
+
+header {
+  color: #CDC9C3;
+}
+
+header nav {
+  font-weight: bold;
+  font-size: 200%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  color: #CDC9C3;
+  text-decoration: none;
+  list-style: none;
+  color: #555555;
+}
+
+
+
+.carousel {
+  width: 100%;
+  padding: 7%;
+  padding-bottom:1.5% ;
+  padding-top:0%;
+}
+h1{
+  color:black;
+}
+
+#galeria .col-lg-4{
+  margin: 0% !important;
+padding: 25px ;
+}
+
+#galeria img{
+  width: 100%;
+}
+
+#galeria img:hover{
+  border: 5px solid #989898;
+}
+
+h2 {
+  background-color: #989898;
+  font-weight: bold;
+  color: #555555;
+  font-size: 270%;
+  width: 100%;
+}
+
+h2 a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+h2 a:hover {
+  background-color: #b6b5b5;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+h5{
+font-size: 300%;
+}
+
+.divProductos {
+  width: 95%;
+  height: 95%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-row: 1;
+  grid-row: 1fr;
+  grid-gap: 2%;
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  padding-left: 2.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.imagen {
+  width: 100%;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+.divComentarios {
+  background-color: #989898;
+  color: #555555;
+}
+
+.divComentariosEsp {
+  background-color: #989898;
+  width: 30%;
+  text-align: center;
+  border: 3%;
+}
+
+.imagenComentarios {
+  width: 20%;
+  padding-top: 10%;
+}
+
+.imagenComentarios h3 {
+  size: 30%;
+}
+
+.divImagenes {
+  width: 100%;
+  height: 90%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "imagen1 imagen1 imagen2" "imagen3 imagen4 imagen4" "imagen5 imagen5 imagen6";
+  -ms-grid-columns: 27% 27% 27%;
+      grid-template-columns: 27% 27% 27%;
+  -ms-grid-rows: 27% 27% 27%;
+      grid-template-rows: 27% 27% 27%;
+  grid-gap: 2%;
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  padding: 0%;
+  padding-top: 2%;
+}
+
+
+/*productos*/
+.divImagenesP {
+  width: 100%;
+  height: 475%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2%;
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  padding-left: 2.5%;
+  padding-bottom: 13%;
+  padding-top: 2%;
+}
+
+/*Presupuesto*/
+.title{
+  font-size: 200%;
+}
+.tituloPresupuesto { 
+  background-color: #989898;
+  color: #555555;
+}
+
+/*Inspirate*/
+.divImagenesI {
+  width: 95%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2%;
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  padding-left: 2.5%;
+  padding-bottom: 13%;
+  -webkit-transform: scale(2, 1);
+          transform: scale(2, 1);
+}
+.imagenAmplia{
+  justify-self: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+footer{
+  background-color: #555555;
+  color:$colorLetra ;
+}
+
+
+@media (max-width: 320px) {
+  .divImagenes {
+        grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4" "imagen5" "imagen6";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .grid-header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1pr;
+    grid-template-rows: 1pr 1pr 1 pr 1pr 1pr;
+    text-align: center;
+    justify-content: end;
+    font-size: 100%;
+    grid-template-areas:
+            "informacion informacion informacion informacion informacion"
+            " imagen-header imagen-header imagen-header imagen-header imagen-header"
+            "menu menu menu";
+}
+
+}
+.liMenu{
+  width: 100%;
+  grid-area: "li";
+}
+@media (max-width: 780px) {
+  .divImagenes {
+    width: 85%;
+        grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4" "imagen5" "imagen6";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding-bottom: 55%;
+        padding-top: 4%;
+  }
+  .divImagenesP {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .divImagenesI {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .grid-header{
+    font-size: 100%;
+}
+.footer{
+  padding: 0.5%;
+}
+}
+
+.imagen1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: imagen1;
+  width: 100%;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+.imagen2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: imagen2;
+  width: 100%;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+.imagen3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: imagen3;
+  width: 100%;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+.imagen4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: imagen4;
+  width: 100%;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+.imagen5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: imagen5;
+  width: 100%;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+.imagen6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: imagen6;
+  width: 100%;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+.imagenBanner2 {
+  width: 80%;
+  border: double;
+  margin-left: 10%;
+}
+
+.imagenBanner3 {
+  width: 94%;
+  padding: 3%;
+}
+
+footer {
+  background-color: #989898;
+  font-size: 250%;
+  color: #555555;
+  padding-top: 0.1%;
+}
+
+sourceMappingURL=index.scss
